@@ -1,16 +1,64 @@
 App-GUI-GoLP
 
-The README is used to introduce the module and provide instructions on
-how to install the module, any machine dependencies it may have (for
-example C compilers and installed libraries) and any other information
-that should be provided before the module is installed.
+App::GUI::GoLP - A GUI for viewing Life-like cellular automata, in Perl/Prima
 
-A README file is required for CPAN modules since CPAN extracts the README
-file from a module distribution so that people browsing the archive
-can use it to get an idea of the module's uses. It is usually a good idea
-to provide version information here so that people can decide whether
-fixes for the module are worth downloading.
+Version 1.0
 
+SYNOPSIS
+
+    golp [<filename>]
+
+DESCRIPTION
+
+This program will load and run Life-like cellular automata from .rle or .cells files. A good source for files is https://conwaylife.com/wiki/Main_Page. It uses Game::Life::Faster for the engine and Prima for the GUI. 
+
+Menus
+
+File
+
+The Open option provides a dialog box allowing the user to select a .rle or .cells format file to be loaded. The Exit option exits the program.
+
+Options
+
+Play/Pause starts and pauses the simulation. This can also be done from the space bar.
+
+Grid toggles the cell grid on and off.
+
+Autogrow toggles the 'autogrow' on and off. When activated, the size of the board will be enlarged if there are live cells close to the edge of the board.
+
+Status line toggles the status text which can be displayed along the bottom of the main window. This gives some information as to the current state of the simulation.
+
+Snapshot board will create a .png image file of the board in the current working directory.
+
+Loop delay presents a list of presets which affects the speed of the simulation. 
+
+Rules allows the user to select from a preset list of birth/survival rules, or use the Custom rule dialog to specify one.
+
+Zoom opens the zoom dialog.
+
+Live cell color allows the user to select the color of a 'live' cell.
+
+Dead cell color allows the user to select the color of a 'dead' cell.
+
+Grid color allows the user to select the color of the grid.
+
+About
+
+Provides a small 'about' dialog.
+
+Mouse interaction
+
+The mouse wheel can be used to adjust the zoom setting (otherwise use the menu option). If the zoom is such that the board is clipped, the user can click and drag within the window to move the viewed section of the board.
+
+TODO
+
+Options for stepping through the simulation, and editing and saving the board.
+
+SEE ALSO
+
+Prima
+
+Game::Life::Faster
 
 INSTALLATION
 
