@@ -27,6 +27,20 @@ my %WriteMakefileArgs = (
     },
     dist  => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean => { FILES => 'App-GUI-GoLP-*' },
+    META_MERGE => {
+        'meta-spec' => { version => 2 },
+         resources => {
+             repository => {
+                 type => 'git',
+                 url  => 'https://github.com/mjohnson108/p5-App-GUI-GoLP.git',
+                 web  => 'https://github.com/mjohnson108/p5-App-GUI-GoLP',
+             },
+             bugtracker => {
+                 web => 'https://github.com/mjohnson108/p5-App-GUI-GoLP/issues'
+             },
+             homepage   => 'https://github.com/mjohnson108/',
+         },
+    },
 );
 
 # Compatibility with old versions of ExtUtils::MakeMaker
