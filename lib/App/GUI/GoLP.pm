@@ -26,6 +26,12 @@ Version 1.0
 
 This program will load and run Life-like cellular automata from .rle or .cells files. A good source for files is L<https://conwaylife.com/wiki/Main_Page>. It uses L<Game::Life::Faster> for the engine and L<Prima> for the GUI. 
 
+=for HTML <p>
+<img src="https://raw.githubusercontent.com/mjohnson108/p5-App-GUI-GoLP/main/example/POD/c5diagonalpuffer1.png" alt="" width="400" height="325">
+<img src="https://raw.githubusercontent.com/mjohnson108/p5-App-GUI-GoLP/main/example/POD/owssagarstretcher.png" alt="" width="400" height="325">
+</p>
+
+
 =head2 Menus
 
 =head3 File
@@ -66,11 +72,12 @@ The mouse wheel can be used to adjust the zoom setting (otherwise use the menu o
 
 =head1 TODO
 
-Ooptions for stepping through the simulation, and editing and saving the board.
+Options for stepping through the simulation, and editing and saving the board.
 
 =head1 SEE ALSO
 
 L<Prima>
+
 L<Game::Life::Faster>
 
 =head1 AUTHOR
